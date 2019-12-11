@@ -1,8 +1,12 @@
 import React from 'react'
 
-export default function Todo() {
+export default function Todo(props) {
+    const { id, toggleComplete, item, completed } = props;
+
     return (
-        <div>
+        <div className={completed ? 'completed' : 'none'}
+            onClick={() => toggleComplete(id)}>
+            {item}
 
         </div>
     )
