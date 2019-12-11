@@ -43,6 +43,7 @@ function App() {
         <button onClick={() => {
           dispatch({ type: "ADD_TODO", payload: newTodo })
         }}>Add Todo</button>
+        <button onClick={handleCompleted}>Clear Completed</button>
 
 
 
